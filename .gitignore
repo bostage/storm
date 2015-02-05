@@ -1,0 +1,8 @@
+# Ignore Sublime Text workspace files
+_site
+
+# Ignore Sublime Text workspace files
+/*.sublime-workspace
+
+# Ignore Mac files
+.DS_Store
