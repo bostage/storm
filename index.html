@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en-us">
 <head>
@@ -33,6 +35,11 @@
     	<!-- mCustomScrollbar -->
          <link href="external/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
 
+      <!-- Isotope -->
+      <link href="external/isotope/isotope.css" rel="stylesheet" />
+      <!-- Magnific popup - responsive popup plugin -->
+      <link href="external/magnific-popup/magnific-popup.css" rel="stylesheet" />
+
         <!-- Custom -->
         <link href="css/style.css?v=1" rel="stylesheet" />
 		
@@ -54,97 +61,8 @@
 <body class="place-shrink">
 
 	<div class="wrapper" id="top">
-	
-		<header class="header-placement">
-			<div class="content">
 
-				<div class="header-fixed header-down">
-					<div class="container">
-						<!--  Logo  -->
-						<a class="logo" href="index.html">
-						   	<!-- Remove comments to choose image and add comment to h1 -->
-						   	<!--<img src="images/logo-full.png" alt="">-->  
-                <img src="assets/images/logo.png" alt=""> 
-<!-- 						   	<h1 class="logo__text">Alle<span class="highlight">c</span><br>
-								<span class="logo__slogan">your business universe</span> -->
-						   	</h1>     		 
-						</a>
-						<!-- End Logo -->
-
-						<!-- Navigation section -->
-						<nav class="z-nav">
-					    	<!-- Toggle for menu mobile view -->
-					        <a href="#" class="z-nav__toggle">
-					        	<span class="menu-icon"></span>
-					        	<span class="menu-text">navigation</span>
-					        	<div class="menu-head"></div>
-					        </a>
-
-					        <div class="z-nav-inner">
-					        <ul class="z-nav__list">
-					        	<li class="z-nav__item">
-					        		<!-- Subsidiary menu toogle button -->
-					            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-					        		<a class="z-nav__link z-nav__link--active" href="index.html">首页</a>
-					        	</li>
-
-					        	<li class="z-nav__item">
-					        		<!-- Subsidiary menu toogle button -->
-					            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-					        		<a class="z-nav__link" href="about.html">关于我们</a>
-					        	</li>
-					            
-					            <li class="z-nav__item">
-					                <!-- Subsidiary menu toogle button -->
-					            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-					            	<a class="z-nav__link" href="services.html">团队成员</a>
-					            </li>
-					            
-					            
-					            <li class="z-nav__item">
-					                <!-- Subsidiary menu toogle button -->
-					            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-					            	<a class="z-nav__link" href="gallery-3col.html">活动计划</a>
-					            </li>
-					            
-					            <li class="z-nav__item">
-					            </li>
-
-					            <li class="z-nav__item">
-					                <!-- Subsidiary menu toogle button -->
-					            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-					            	<a class="z-nav__link" href="blog.html">训练计划</a>
-					            </li>
-
-					            <li class="z-nav__item">
-					                <!-- Subsidiary menu toogle button -->
-					            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-					            	<a class="z-nav__link" href="forum.html">成长历程</a>
-					            </li>
-					            
-					            <li class="z-nav__item">
-					                <!-- Subsidiary menu toogle button -->
-					            	<span class="z-nav__toggle-sub plus"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
-					            	<a class="z-nav__link" href="site-map.html">联系我们</a>
-					            </li>
-					        </ul>
-					        </div><!-- end list menu inner container -->
-					        <!-- end list menu item -->
-					    </nav>
-					    <!-- end navigation section -->
-					</div> <!-- end container -->
-				</div> <!-- end fixed top block -->
-
-				<div id="large-header" class="large-header">
-					<canvas id="demo-canvas"></canvas>
-					<h1 class="main-title">新队友招募，火热进行中！</h1>
-					<h2 class="main-title-helper waypoint" data-animate-down="header-up" data-animate-up="header-down">你有兴趣参加真人CS彩弹射击活动吗？立即和我们取得联系吧，欢迎从来没玩过的小伙伴！</h2>
-				</div>
-
-				<a class="scroll-next" href="#about"></a>
-			</div>
-			
-		</header><!-- /header -->
+	  {% include header.html %}
 
 		<section class="container bottom-space--md" id="about">
 			<div class="row">
@@ -164,187 +82,263 @@
 			</div><!-- end row -->
 		</section><!-- end container -->
 		
-		<div class="staff-container" id="team">
-			<section class="container">
-				<h2 class="block-title block-title--top-larger">特战队员</h2>
+    <!-- 战队成员 -->
+    <section class="gallery-wrapper">
+      <h2 class="block-title block-title--top-larger">战队成员</h2>
 
-				<div class="swiper-container staff-slider">
-				  <div class="swiper-wrapper">
-				      <!--Slide-->
-				      <div class="swiper-slide"> 
-				        <div class="row">
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max image--border-hover">
-													<img src="assets/images/members/1.jpg" alt="">
-												</div>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">小鱼</h3>
-												<p class="staff__position">队长</p>
-												<p class="post__text">活动组织，招募新兵</p>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
+      <ul class="tags tags--btn" id="filters">
+        <li class="tags__link tags__link--active" data-filter="*">全部</li>
+        <li class="tags__link" data-filter=".player">特战队员</li>
+        <li class="tags__link" data-filter=".support">战地支援</li>
+        <li class="tags__link" data-filter=".consultant">战术顾问</li>
+        <li class="tags__link" data-filter=".admin">后勤行政</li>
+      </ul>
 
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max image--border-hover">
-													<img src="http://placehold.it/526x526" alt="">
-												</div>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">查尔</h3>
-												<p class="staff__position">游骑兵</p>
-												<p class="post__text"> 动作敏捷，前排突袭 </p>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
+      <div class="gallery-full">
+        <a class="gallery-item player" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/11.jpg" alt="小鱼">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">小鱼</span>
+                <span class="image-container__info-more">游骑兵</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
+        
+        <a class="gallery-item consultant" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/2.jpg" alt="神秘人">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">神秘人</span>
+                <span class="image-container__info-more">战术教练</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
+        
+        <a class="gallery-item player" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/3.jpg" alt="头像">
+            </div>
+            <div class="image-container__info">
+                <span class="image-container__info-main">杰特</span>
+                <span class="image-container__info-more">狙击手</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
 
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link post--right staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">杰特</h3>
-												<p class="staff__position">狙击手</p>
-												<p class="post__text">沉着冷静，在后排狙击全场 </p>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max pull-right image--border-hover">
-													<img src="http://placehold.it/526x526" alt="">
-												</div>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
+        <a class="gallery-item player" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/4.jpg" alt="头像">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">查尔</span>
+                <span class="image-container__info-more">突袭兵</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
 
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link post--right staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">阿峰</h3>
-												<p class="staff__position">战术顾问</p>
-												<p class="post__text">退伍军人，负责战术训练</p>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max pull-right image--border-hover">
-													<img src="http://placehold.it/526x526" alt="">
-												</div>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
-						  </div><!-- end row -->
-				      </div>
-				      
-				      <!--Slide-->
-				      <div class="swiper-slide">
-				        	<div class="row">
+        <a class="gallery-item support" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/5.jpg" alt="头像">
+            </div>
+            <div class="image-container__info">
+                <span class="image-container__info-main">乌拉</span>
+                <span class="image-container__info-more">战地急救</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
 
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max image--border-hover">
-													<img src="http://placehold.it/526x526" alt="">
-												</div>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">Sara Ellis</h3>
-												<p class="staff__position">Project Manager</p>
-												<p class="post__text"> Sed in lacus adipiscing, dictum elit viverra, ultricies mi. Aliquam quis placerat massa. Mauris at augue erat.  </p>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
+        <a class="gallery-item admin" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/6.jpg" alt="头像">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">美罗</span>
+                <span class="image-container__info-more">新兵招募</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
 
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max image--border-hover">
-													<img src="http://placehold.it/526x526" alt="">
-												</div>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">Neal Caffrey</h3>
-												<p class="staff__position">Chief Executive Officer / CEO</p>
-												<p class="post__text">Pellentesque in lacinia quam. Fusce quis nulla tincidunt, interdum magna vitae, viverra est.</p>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
+        <a class="gallery-item support" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/7.jpg" alt="头像">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">佳璇</span>
+                <span class="image-container__info-more">战地记者</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
 
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link post--right staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">Elizabeth Burke</h3>
-												<p class="staff__position">Web Designer</p>
-												<p class="post__text">Cras eget hendrerit nunc. Duis aliquet volutpat ligula, id posuere neque pulvinar et. Donec sodales condimentum condimentum. </p>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max pull-right image--border-hover">
-													<img src="http://placehold.it/526x526" alt="">
-												</div>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
+        <a class="gallery-item consultant" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/8.jpg" alt="头像">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">诗阳</span>
+                <span class="image-container__info-more">作战指挥</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
 
-							<div class="col-sm-12 col-md-6">
-								<article>
-									<a class="post post--preview-link post--right staff" href="single-employee.html">
-										<div class="row">
-											<div class="one-column col-xs-6 col-md-5 col-lg-6">
-												<h3 class="staff__name">Clinton Jones</h3>
-												<p class="staff__position">WordPress Developer</p>
-												<p class="post__text">Ut eleifend a erat sed facilisis. Mauris laoreet vitae lorem eget aliquet. Nullam rhoncus nisi quis nulla lobortis consequat.  </p>
-											</div><!-- end col -->
-											<div class="one-column col-xs-6 col-md-7 col-lg-6">
-												<div class="image-container image-container--max pull-right image--border-hover">
-													<img src="http://placehold.it/526x526" alt="">
-												</div>
-											</div><!-- end col -->
-										</div><!-- end row -->
-									</a>
-								</article><!-- end article -->
-							</div><!-- end col -->
-							
-						  </div><!-- end row -->
-				      </div>
-				
-				  </div>
-				</div>
-				
-				<div class="devider-brand top-space"></div>
-			</section>
+        <a class="gallery-item consultant" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/9.jpg" alt="头像">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">阿锋</span>
+                <span class="image-container__info-more">装备专家</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
 
-			<div class="staff-slider-control">
-				<a class="prev-arrow" href="#"><i class="fa fa-angle-left"></i></a>
-				<a class="next-arrow" href="#"><i class="fa fa-angle-right"></i></a>
-			</div><!-- end slider controls-->
-		</div>
+        <a class="gallery-item player" href="http://placehold.it/1600x1200">
+          <div class="image-container image-container--describe">
+            <div class="gallery__image">
+              <img src="assets/images/players/10.jpg" alt="头像">
+            </div>  
+            <div class="image-container__info">
+                <span class="image-container__info-main">杰森</span>
+                <span class="image-container__info-more">战地指挥</span>
+            </div>
+          </div>
+        </a><!-- end gallery item -->
+
+
+      </div>
+      
+    </section>
+
+    <!-- 活动费用 -->
+    <section>
+      <h2 class="block-title block-title--top-larger">活动费用</h2>
+      <div class="container">
+
+        <div class="price-container">
+          <div class="col-sm-3  price--full">
+            <ul class="price-info">
+              <li class="price-info__item">弹药数量</li>
+              <li class="price-info__item">场地类型</li>
+              <li class="price-info__item">活动时间</li>
+              <li class="price-info__item">持续时间</li>                
+              <li class="price-info__item">适用人群</li>
+              <li class="price-info__item">人数限制</li>
+            </ul>
+          </div><!-- end col -->
+
+          <div class="col-sm-9  price--full">
+            <div class="">
+              <div class="col-sm-3 price--full">
+                  <!-- Price table -->
+                  <div class="price price--stript">
+                    <header class="price__head">
+                      <h4 class="price__package">A计划</h4>
+                      <p class="price__value">S$44</p>
+                      <p class="price__descript">每人</p>
+                    </header>
+                    <ul class="price__content">
+                      <li class="price-quality">200发</li>
+                      <li class="price-quality">野战/竞技</li>
+                      <li class="price-quality">周末</li>
+                      <li class="price-quality">1到2小时</li>
+                      <li class="price-quality">进阶玩家</li>
+                      <li class="price-quality">至少10人</li>
+                    </ul>
+                    <footer class="price__bottom">
+                      <a class="btn btn-primary btn--decorated price__btn" href="#">立即报名</a>
+                    </footer>
+                  </div>
+                  <!-- end price table -->
+              </div><!-- end col -->
+
+              <div class="col-sm-3 price--full">
+                  <!-- Price table -->
+                  <div class="price price--stript">
+                    <header class="price__head">
+                      <h4 class="price__package">B计划</h4>
+                      <p class="price__value">S$55</p>
+                      <p class="price__descript">每人</p>
+                    </header>
+                    <ul class="price__content">
+                      <li class="price-quality">250发</li>
+                      <li class="price-quality">野战+竞技</li>
+                      <li class="price-quality">周末</li>
+                      <li class="price-quality">1到2小时</li>
+                      <li class="price-quality">初次体验</li>
+                      <li class="price-quality">至少6人</li>
+                    </ul>
+                    <footer class="price__bottom">
+                      <a class="btn btn-primary btn--decorated price__btn" href="#">立即报名</a>
+                    </footer>
+                  </div>
+                  <!-- end price table -->
+              </div><!-- end col -->
+
+              <div class="col-sm-3 price--full">
+                  <!-- Price table -->
+                  <div class="price price--stript">
+                    <header class="price__head">
+                      <h4 class="price__package">训练体验</h4>
+                      <p class="price__value">S$99</p>
+                      <p class="price__descript">每人</p>
+                    </header>
+                    <ul class="price__content">
+                      <li class="price-quality">500发</li>
+                      <li class="price-quality">竞技场</li>
+                      <li class="price-quality">周日</li>
+                      <li class="price-quality">5小时左右</li>
+                      <li class="price-quality">预备队员</li>
+                      <li class="price-quality">最多2人</li>
+                    </ul>
+                    <footer class="price__bottom">
+                      <a class="btn btn-primary btn--decorated price__btn" href="#">联系队长</a>
+                    </footer>
+                  </div>
+                  <!-- end price table -->
+              </div><!-- end col -->
+
+              <div class="col-sm-3 price--full">
+                  <!-- Price table -->
+                  <div class="price price--stript">
+                    <header class="price__head">
+                      <h4 class="price__package">日常训练</h4>
+                      <p class="price__value">S$29</p>
+                      <p class="price__descript">每人</p>
+                    </header>
+                    <ul class="price__content">
+                      <li class="price-quality">500发</li>
+                      <li class="price-quality">竞技场</li>
+                      <li class="price-quality">周日</li>
+                      <li class="price-quality">5小时左右</li>
+                      <li class="price-quality">正式队员</li>
+                      <li class="price-quality">任意</li>
+                    </ul>
+                    <footer class="price__bottom">
+                      <a class="btn btn-primary btn--decorated price__btn" href="#">联系队长</a>
+                    </footer>
+                  </div>
+                  <!-- end price table -->
+              </div><!-- end col -->
+            </div>
+          </div><!-- end col -->
+        </div><!-- end row -->
+
+      </div><!-- end container -->
+    </section>
+
+
+
 
 		<div class="promo promo--secondary promo--clean">
 			<h3 class="promo__heading">We're Hiring &amp;</h3>
@@ -430,116 +424,7 @@
 		<!-- Colored devider -->
 		<div class="devider-color"></div>
 
-		<!-- Footer section -->
-		<footer class="footer" id="contact">
-			<div class="container">
-				<!-- Twitter carousel -->
-				<div class="swiper-container">
-					<div class="swiper-wrapper" id="twitter-feed"></div>
-					<!-- Slider pagination -->
-					<div class="swiper-pagination"></div>
-				</div>
-
-				<div class="row">
-				
-				<!-- Latest post -->
-				<div class="col-sm-4">
-					<h3 class="heading-info">Latest from blog:</h3>
-
-					<div class="row">
-						<div class="col-xs-6 col-sm-12 one-column">
-							<article class="post post--latest">
-								<h3 class="not-visible">Latest post</h3>
-								<a class="post__images" href="single-post.html">
-									<img src="http://placehold.it/160x160" alt="">
-								</a>
-								<a class="post__text" href="single-post.html">Mauris orci purus, ultrices dapibus justo non, eleifend consequat lorem. </a>
-								<time datetime="2014-07-17" class="post__date">July 17, 2014</time>
-							</article>
-						</div>
-					
-						<div class="col-xs-6 col-sm-12 one-column">
-							<article class="post post--latest">
-								<h3 class="not-visible">Latest post</h3>
-								<a class="post__images" href="single-post.html">
-									<img src="http://placehold.it/160x160" alt="">
-								</a>
-								<a class="post__text" href="single-post.html">Pellentesque et magna malesuada, scelerisque elit ac, convallis lacus. </a>
-								<time datetime="2014-07-16" class="post__date">July 16, 2014</time>
-							</article>
-						</div>
-					</div>
-				</div>
-				<!-- end latest post -->
-				
-				<!-- Contact info about company -->
-				<div class="col-sm-4">
-					<h3 class="heading-info heading-info--mobile">Contact info:</h3>
-					<!-- Contact information about company -->
-						<address class="contact-info contact-info--list">
-							<div class="row">
-								<div class="col-xs-6 col-sm-12 one-column">
-									<span class="contact-info__item">
-										<i class="fa fa-location-arrow"></i>
-										101 West Street, New York, NY 12345
-									</span>
-									<span class="contact-info__item">
-										<i class="fa fa-mobile"></i>
-										+1-888-555-5555 / +1-888-123-3535
-									</span>
-								</div>
-					
-								<div class="col-xs-6 col-sm-12 one-column">
-									<span class="contact-info__item">
-										<i class="fa fa-envelope"></i>
-										info@allec.com / sales@allec.com
-									</span>
-									<span class="contact-info__item">
-										<i class="fa fa-skype"></i>
-										allec-support
-									</span>
-								</div>
-							</div>
-						</address>
-						<!-- end contact information -->
-				</div>
-				<!-- end contact info -->
-				
-				<!-- Social links -->
-				<div class="col-sm-4">
-				<h3 class="heading-info heading-info--mobile">We’re social:</h3>
-					<div class="social social--default">
-						<!-- List with social icons -->
-						<ul>
-							<li class="social__item"><a class="social__link" href="https://twitter.com/OliaGozha" target="_blank"><i class="social__icon fa fa-twitter"></i></a></li>
-							<li class="social__item"><a class="social__link" href="https://www.facebook.com/olia.gozha" target="_blank"><i class="social__icon fa fa-facebook"></i></a></li>
-							<li class="social__item"><a class="social__link" href="https://plus.google.com/u/0/+OliaGozha/posts" target="_blank"><i class="social__icon fa fa-google-plus"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-pinterest"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-tumblr"></i></a></li>
-							<li class="social__item"><a class="social__link" href="http://www.linkedin.com/pub/olia-gozha/49/b91/268" target="_blank"><i class="social__icon fa fa-linkedin"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-youtube"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-github-alt"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-flickr"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-vimeo-square"></i></a></li>
-							<li class="social__item"><a class="social__link" href="http://dribbble.com/OliaGozha" target="_blank"><i class="social__icon fa fa-dribbble"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-stumbleupon"></i></a></li>
-							<li class="social__item"><a class="social__link" href="http://instagram.com/olechka_dumka#" target="_blank"><i class="social__icon fa fa-instagram"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-soundcloud"></i></a></li>
-							<li class="social__item"><a class="social__link" href="http://www.behance.net/olia_gozha" target="_blank"><i class="social__icon fa fa-behance"></i></a></li>
-							<li class="social__item"><a class="social__link" href="#" target="_blank"><i class="social__icon fa fa-vine"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- end social links -->
-				</div><!-- end row -->
-				
-				<div class="copy">
-					&copy; Allec, 2014. All rights reserved. Done by <a href="http://gozha.net/" target="_blank">Olia Gozha</a>
-				</div>
-
-			</div><!-- end container -->
-		</footer>
-		<!-- end footer section -->
+    {% include footer.html %}
 
 		<div class="top-scroll"><i class="fa fa-angle-up"></i></div>
 	
@@ -576,16 +461,25 @@
         <script src="external/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
         <!-- Smooth Scroll -->
         <script src="external/SmoothScroll/SmoothScroll.js"></script>
+
+
+      <!-- Waypoints -->
+      <script src="external/waypoint/waypoints.min.js"></script>
+      <!-- Isotope -->
+      <script src="external/isotope/jquery.isotope.js"></script>
+      <!-- Magnific popup - responsive popup plugin -->
+       <script src="external/magnific-popup/jquery.magnific-popup.min.js"></script>
         
 		<!-- Custom -->
         <script src="js/custom.js"></script>
 
 		<script>
 			$(document).ready(function() {
-				staffSlider();
 				scrollSlider();
 				smoothScrollInit();
 				preloader();
+        isotopeGallery();
+        galleryPopup();
 			});
 		</script>
 

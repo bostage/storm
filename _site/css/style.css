@@ -12190,6 +12190,12 @@ table th[class*="col-"] {
   left: 5px;
   font-size: 18px;
 }
+.contact-info--list .fa-weixin {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  font-size: 18px;
+}
 .contact-info--primary {
   padding: 36px 0 40px 32px;
 }
