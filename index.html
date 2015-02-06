@@ -64,7 +64,8 @@
 
 	  {% include header.html %}
 
-		<section class="container bottom-space--md" id="about">
+		<section class="container bottom-space--md" id="about"> 
+      <h2 class="block-title block-title--top-larger">战队简介</h2>
 			<div class="row">
 				<div>
           <div class="col-sm-6">
@@ -83,7 +84,7 @@
 		</section><!-- end container -->
 		
     <!-- 战队成员 -->
-    <section class="gallery-wrapper">
+    <section class="gallery-wrapper" id="team">
       <h2 class="block-title block-title--top-larger">战队成员</h2>
 
       <ul class="tags tags--btn" id="filters">
@@ -221,7 +222,7 @@
     </section>
 
     <!-- 活动费用 -->
-    <section>
+    <section id="prices">
       <h2 class="block-title block-title--top-larger">活动费用</h2>
       <div class="container">
 
@@ -337,90 +338,12 @@
       </div><!-- end container -->
     </section>
 
-
-
-
-		<div class="promo promo--secondary promo--clean">
-			<h3 class="promo__heading">We're Hiring &amp;</h3>
-			<p class="promo__describe">You Can Join Us</p>
-			<a class="btn btn-warning btn--decorated promo__btn" href="#">Apply Now</a>
+		<div class="promo promo--secondary promo--clean" id="contact">
+			<h3 class="promo__heading">特战队员招募火热招募中</h3>
+			<p class="promo__describe">欢迎你的加入，为了我们的同一个目标，同一个梦想！</p>
+			<a class="btn btn-warning btn--decorated promo__btn" href="#">立即扫描微信群</a>
 		</div>
 
-		<div class="testimonial-block" id="clients">
-			<div class="container">
-				<div class="block-title block-title--top-larger">Testimonials</div>
-
-				<div class="content">
-	                <ul class="testimonial-wrap">
-
-	                    <li class="testimonial">
-							<div class="testimonial__images">
-								<img src="http://placehold.it/160x160" alt="">
-							</div>
-							<p class="testimonial__author">Valentino Sorano</p>
-							<p class="testimonial__info">CEO, Themeforest</p>
-							<p class="testimonial__text">“Donec euismod turpis id ullamcorper lobortis. Maecenas faucibus ipsum sem, sed consequat ante consectetur non. Nam at neque dui. Integer id risus sit amet justo varius semper quis ut enim.”</p>
-						</li>
-
-						<li class="testimonial">
-							<div class="testimonial__images">
-								<img src="http://placehold.it/160x160" alt="">
-							</div>
-							<p class="testimonial__author">Ashley Spencer</p>
-							<p class="testimonial__info">CEO, Envato</p>
-							<p class="testimonial__text">“Aenean rutrum aliquet odio, ut posuere ante eleifend ac. Donec venenatis diam sapien, malesuada euismod diam rutrum a. ”</p>
-						</li>
-
-						<li class="testimonial">
-							<div class="testimonial__images">
-								<img src="http://placehold.it/160x160" alt="">
-							</div>
-							<p class="testimonial__author">James Bennett</p>
-							<p class="testimonial__info">CEO, Photodune</p>
-							<p class="testimonial__text">Quisque feugiat facilisis ipsum ut lobortis. Integer hendrerit sodales nisl nec tristique. Aenean commodo sapien ac tellus pharetra, quis tristique mi posuere.</p>
-						</li>
-
-						<li class="testimonial">
-							<div class="testimonial__images">
-								<img src="http://placehold.it/160x160" alt="">
-							</div>
-							<p class="testimonial__author">Valentino Sorano</p>
-							<p class="testimonial__info">CEO, Themeforest</p>
-							<p class="testimonial__text">“Aenean rutrum aliquet odio, ut posuere ante eleifend ac. Donec venenatis diam sapien, malesuada euismod diam rutrum a. ”</p>
-						</li>
-
-						<li class="testimonial">
-							<div class="testimonial__images">
-								<img src="http://placehold.it/160x160" alt="">
-							</div>
-							<p class="testimonial__author">Valentino Sorano</p>
-							<p class="testimonial__info">CEO, Themeforest</p>
-							<p class="testimonial__text">Quisque feugiat facilisis ipsum ut lobortis. Integer hendrerit sodales nisl nec tristique. Aenean commodo sapien ac tellus pharetra, quis tristique mi posuere.</p>
-						</li>
-
-						<li class="testimonial">
-							<div class="testimonial__images">
-								<img src="http://placehold.it/160x160" alt="">
-							</div>
-							<p class="testimonial__author">Valentino Sorano</p>
-							<p class="testimonial__info">CEO, Themeforest</p>
-							<p class="testimonial__text">“Donec euismod turpis id ullamcorper lobortis. Maecenas faucibus ipsum sem, sed consequat ante consectetur non. Nam at neque dui. Integer id risus sit amet justo varius semper quis ut enim.”</p>
-						</li>
-
-						<li class="testimonial">
-							<div class="testimonial__images">
-								<img src="http://placehold.it/160x160" alt="">
-							</div>
-							<p class="testimonial__author">Ashley Spencer</p>
-							<p class="testimonial__info">CEO, Envato</p>
-							<p class="testimonial__text">“Aenean rutrum aliquet odio, ut posuere ante eleifend ac. Donec venenatis diam sapien, malesuada euismod diam rutrum a. ”</p>
-						</li>
-
-	                </ul>
-	            </div>
-
-			</div><!-- end container -->
-		</div>
 		<!-- Colored devider -->
 		<div class="devider-color"></div>
 
@@ -477,6 +400,7 @@
 			$(document).ready(function() {
 				scrollSlider();
 				smoothScrollInit();
+        rocketsStart();
 				preloader();
         isotopeGallery();
         galleryPopup();
